@@ -1,0 +1,5 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Sistema Node.js</title><link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css"><link rel="stylesheet" href="/style.css"></head><body>
+<nav class="navbar navbar-dark bg-dark"><div class="container"><a class="navbar-brand" href="/">Sistema Node.js</a></div></nav>
+<main class="container py-5"><div class="p-5 mb-4 rounded-4 hero"><h1>Node.js - Excluir e Tela Editar</h1><p class="lead">Clientes, Fornecedores e Produtos</p></div>
+<div class="card p-4 mb-4"><h2 class="h5">Dupla</h2><p class="mb-0"><b><%= nomes[0] %></b> e <b><%= nomes[1] %></b></p></div>
+<div class="row g-4"><% [['clientes','Clientes'],['fornecedores','Fornecedores'],['produtos','Produtos']].forEach(x=>{ %><div class="col-md-4"><div class="card p-4 h-100"><h2 class="h5"><%=x[1]%></h2><p>Cadastre, edite e exclua registros.</p><a class="btn btn-primary mt-auto" href="/<%=x[0]%>">Abrir</a></div></div><% }) %></div></main></body></html>
